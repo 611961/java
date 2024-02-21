@@ -1,0 +1,38 @@
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	int arr[]=new int [5];
+	arr[0]=1;
+	arr[1]=11;
+	arr[2]=1;
+	arr[3]=2;
+	arr[4]=2;
+	
+	// to insertion in ArrayList
+	
+	ArrayList<Integer>al=new ArrayList<>();
+	for(int i=0;i<5;i++){
+	al.add(arr[i]);
+	System.out.println(al.get(i));
+	    }      
+	    
+	    // to sort a ArrayList
+	    Collections.sort(al);
+	    
+	    //to sort in descending
+	    Collections.sort(al,Collections.reverseOrder());
+	    
+	    //to remove any elemnt 
+	    al.remove(4);  // here 4 is index;
+	    
+	    //to directly put an element at any position;
+	    
+	   al.add(1,4)           //idx,elt  
+	    
+	    //to get index of any element
+	    al.indexOf(3)       //it will give the indx of this elemt if not exist then -1
+	}
+}
