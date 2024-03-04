@@ -1,0 +1,37 @@
+import java.util.*;
+
+class Lamp{
+boolean ison=false;
+void on(){
+    ison=true;
+    System.out.println("Is on? "+ison);
+}
+void of(){
+    ison =false;
+    System.out.println("Is on? "+ison);
+    }
+}
+
+
+public class Main{
+    public static void main(String args[]){
+        Lamp obj=new Lamp();
+          System.out.println("1 for on");
+            System.out.println("2 for of");
+            int c;
+        System.out.println("Enter choice to on or off");
+        Scanner sc=new Scanner(System.in);
+        c=sc.nextInt();
+        
+        switch(c){
+        case 1:
+        obj.on();
+        break;
+        case 2:
+        obj.of();
+        break;
+        default:
+          System.out.println("enter a valid choice");
+        }
+    }
+}
