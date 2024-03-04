@@ -4,9 +4,12 @@ String a ="nitin"            // here a is reference variable and "nitin" is obje
 
 string b="nitin"             // here string a and b both pointing to same object which creates different memory string pool in heap memory
 
+// here (a==b) is true;
 
 // now if we want to create 2 differnet objects then 
 
 
 String a= new String ("nitin");
 String b=new String ("nitin");           // now these are stored in 2 different memories
+
+here (a==b)  false;
