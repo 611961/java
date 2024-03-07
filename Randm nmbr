@@ -1,0 +1,8 @@
+import java.util.Random;
+ class Main{
+    public static void main(String[] args) {
+        Random ran = new Random();
+        int random = 1000 + ran.nextInt(9000);
+        System.out.println("Random Number: " + random);
+    }
+}
