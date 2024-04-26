@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String a = sc.nextLine();
+        String b = sc.nextLine();
+
+        BigInteger aa = new BigInteger(a);
+        BigInteger bb = new BigInteger(b);
+
+        // Perform addition and store the result in a variable
+        BigInteger sum = aa.add(bb);
+
+        // Perform multiplication and store the result in a variable
+        BigInteger product = aa.multiply(bb);
+
+        // Output the sum and product of the two BigInteger numbers
+        System.out.println(sum);
+        System.out.println(product);
+    }
+}
